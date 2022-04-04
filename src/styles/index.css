@@ -10,3 +10,20 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+#red {
+    width: 20%;
+    height: 20%;
+}
+
+#yellow {
+    width: 20%;
+    height: 20%;
+
+}
+
+#green{
+    width: 20%;
+    height: 20%;
+
+}
