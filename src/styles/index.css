@@ -11,19 +11,28 @@
 
 */
 
-#red {
-    width: 20%;
-    height: 20%;
+body{
+    background-color: grey;
 }
 
-#yellow {
-    width: 20%;
-    height: 20%;
-
+.traffic-light{
+    background: black;
+    padding: 10px;
+    display: inline-block;
+    margin: auto;
+    border-radius: 10px;
 }
 
-#green{
-    width: 20%;
-    height: 20%;
-
+.light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 10px;
+    opacity: 0.4;
+  
 }
+
+.red {background-color: red;}
+.yellow {background-color: yellow;}
+.green {background-color: green;}
+.shine {box-shadow: 0px o px 9px 4px #747de8;opacity: 1;}

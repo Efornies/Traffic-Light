@@ -2,37 +2,28 @@ import React, { useState } from "react";
 
 //create your first component
 const Home = () => {
-	const [selected, setSelected] = "red";
+	const [selected, setSelected] = useState(null);
 
 	return (
-		<div>
-			<div
-				id="red"
-				className="bg-danger"
-				onClick={() => {
-					setSelected("red");
-				}}>
-				{" "}
+		<div className="position-absolute top-50 start-50 translate-middle">
+			<div className="traffic-light">
+				<div
+					onClick={() => setSelected("red")}
+					className={
+						"light red" + (selected === "red" ? " shine" : "")
+					}></div>
+				<div
+					onClick={() => setSelected("yellow")}
+					className={
+						"light yellow" + (selected === "yellow" ? " shine" : "")
+					}></div>
+
+				<div
+					onClick={() => setSelected("green")}
+					className={
+						"light green" + (selected === "green" ? " shine" : "")
+					}></div>
 			</div>
-			<div
-				id="yellow"
-				className="bg-warning"
-				onClick={() => {
-					setSelected("yellow");
-				}}>
-				{" "}
-			</div>
-			<div
-				id="green"
-				className="bg-sucess"
-				onClick={() => {
-					setSelected("green");
-				}}>
-				{" "}
-			</div>
-			{selected == "red" ? <h1> {selected} </h1> : <h1> X </h1>}
-			{selected == "red" ? <h1> {selected} </h1> : <h1> X </h1>}
-			{selected == "red" ? <h1> {selected} </h1> : <h1> X </h1>}
 		</div>
 	);
 };
